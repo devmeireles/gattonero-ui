@@ -22,10 +22,12 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true
   },
   "include": [
-    "src"
+    "src",
+    "./test/setupAfterEnv.ts",
   ],
   "exclude": [
     "node_modules",
