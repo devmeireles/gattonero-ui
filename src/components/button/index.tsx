@@ -1,16 +1,15 @@
+import React from "react";
+import { TButtonSize } from "../../types/TSizes";
+
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
   primary?: boolean;
   /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: TButtonSize
   /**
    * Button contents
    */
@@ -24,19 +23,16 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const Button: React.FC<ButtonProps> = ({
   primary = false,
   size = 'medium',
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className="px-4 py-2 bg-green-500 text-white rounded-md"
       {...props}
     >
       {label}
