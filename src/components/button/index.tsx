@@ -1,5 +1,5 @@
-import React from "react";
-import { TButtonSize } from "../../types/TSizes";
+import React from 'react';
+import { TButtonSize } from '../../types/TSizes';
 
 export interface ButtonProps {
   /**
@@ -9,7 +9,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: TButtonSize
+  size?: TButtonSize;
   /**
    * Button contents
    */
@@ -32,7 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className="px-4 py-2 bg-green-500 text-white rounded-md"
+      className={`px-4 py-2 bg-green-500 text-white rounded-md ${size} ${primary}`}
       {...props}
     >
       {label}
