@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/devmeireles/gattonero-ui/compare/v1.1.0...v1.2.0) (2024-06-17)
+
+
+### Features
+
+* **avatar:** add an avatar component ([b3d952e](https://github.com/devmeireles/gattonero-ui/commit/b3d952e26d26930984b83c054a47c1a15739d073))
+
 # [1.1.0](https://github.com/devmeireles/gattonero-ui/compare/v1.0.0...v1.1.0) (2024-06-14)
 
 
